@@ -45,6 +45,5 @@ export const handleEqualToClick=(calculator)=>{
   calculator.operator="=";
   calculator.firstNumber=calculator.result;
   setOutputScreen(calculator);
-  console.log(calculator);
   return calculator;
 }

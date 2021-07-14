@@ -1,21 +1,18 @@
 //Calcualting the given expression
 export const calculateExpression = (calculator) => {
-  const firstValue=calculator.firstNumber;
-  const secondValue=calculator.secondNumber;
-  const operation=calculator.operator;
 
-  switch (operation) {
+  switch (calculator.operator) {
     case "+":
-      calculator.result = firstValue + secondValue;
+      calculator.result = calculator.firstNumber + calculator.secondNumber;
       break;
     case "x":
-      calculator.result = firstValue * secondValue;
+      calculator.result = calculator.firstNumber * calculator.secondNumber;
       break;
     case "/":
-      calculator.result = firstValue / secondValue;
+      calculator.result = calculator.firstNumber / calculator.secondNumber;
       break;
     case "-":
-      calculator.result = firstValue - secondValue;
+      calculator.result = calculator.firstNumber - calculator.secondNumber;
       break;
     default:
       break;

@@ -37,22 +37,26 @@ const initializeCalculator = () => {
   for (const i of operatorButtons) {
     i.addEventListener("click", () => {
       calculator = handleOperatorClick(calculator, i.innerHTML);
-      console.log(calculator.operator);
       setInputScreen(calculator);
     });
   }
 
+
+  //Handling all Clear Button Click 
   allClearButton.addEventListener("click", () => {
     calculator = clearScreen(calculator);
     setOutputScreen(calculator);
     setInputScreen(calculator);
   });
 
+
+  //Handling equalTo button click
   equalToButton.addEventListener("click", () => {
     calculator = handleEqualToClick(calculator);
   });
   setOutputScreen(calculator);
 
+  //Handling Delete Button Click
   deleteButton.addEventListener("click", () => {
     calculator = deleteLastValue(calculator);
     setOutputScreen(calculator);
