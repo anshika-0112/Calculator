@@ -3,7 +3,7 @@ import {
   handleNumberClick,
   handleOperatorClick,
   handleEqualToClick,
-} from "./utilities/UpdateDisplay.js";
+} from "./utilities/handleClicks.js";
 
 import { setInputScreen, setOutputScreen } from "./utilities/display.js";
 import { deleteLastValue } from "./utilities/delete.js";
